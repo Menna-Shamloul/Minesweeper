@@ -39,6 +39,18 @@ class Board:
                     continue
                 self.board[r][c] = self.get_num_neighboring_bombs(r, c)
 
+    def get_num_neighboring_bombs(self, row, col):
+        num_neighboring_bombs = 0
+        for  r in range(max(0, row-1), min(self.dim_size-1, row+1)+1):
+            for c in range(max(0, col-1), min(self.dim_size-1, col+1)+1):
+                if r == row and c == col:
+                    # if r and c are the same as location that we are checking continue
+                    continue
+                if self.board[r][c] == '*':
+                    num_neighboring_bombs += 1
+        return num_neighboring_bombs
+
+
 
 # play the game
 def play(dim_size=10, num_bombs=10):
