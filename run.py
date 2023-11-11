@@ -1,7 +1,7 @@
 import random
 # create a board to represent the minesweeper game
 class Board:
-    def _init_(self, dim_size, num_bombs):
+    def __init__(self, dim_size, num_bombs):
         # track these parameters
         self.dim_size = dim_size
         self.num_bombs = num_bombs
@@ -66,6 +66,9 @@ class Board:
                     continue
                 self.dig(r, c)
         return True
+
+    def __str__(self):
+        # self string displays the current minesweeper board situation
 
 
 
