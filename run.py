@@ -30,6 +30,14 @@ class Board:
             bombs_planted += 1
         
         return board
+    
+    def assign_values_to_board(self):
+        # assign number for all empty spaces which represents how many neighboring bombs there are
+        for r in range(self.dim_size):
+            for c in range(self.dim_size):
+                if self.board[r][c] == '*':
+                    continue
+                self.board[r][c] = self.get_num_neighboring_bombs(r, c)
 
 
 # play the game
