@@ -77,7 +77,17 @@ class Board:
                     visible_board[row][col] = str(self.board[row][col])
                 else:
                     visible_board[row][col] = ' '
-                    
+        # put this together in a string
+        string_rep = ''
+        # get max column widths for printing
+        widths = []
+        for idx in range(self.dim_size):
+            columns = map(lambda x: x[idx], visible_board)
+            widths.append(
+                len(
+                    max(columns, key = len)
+                )
+            )
 
 
 
