@@ -69,6 +69,15 @@ class Board:
 
     def __str__(self):
         # self string displays the current minesweeper board situation
+        visible_board = [[None for _ in range(self.dim_size)] for _ in range(self.dim_size)]
+        # create a new array which the user will see
+        for row in range(self.dim_size):
+            for col in range(self.dim_size):
+                if (row,col) in self.dug:
+                    visible_board[row][col] = str(self.board[row][col])
+                else:
+                    visible_board[row][col] = ' '
+                    
 
 
 
