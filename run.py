@@ -119,6 +119,11 @@ class Board:
 
 # play the game
 def play(dim_size=10, num_bombs=10):
+    print("-" * 35)
+    print("Welcome to MINESWEEPER GAME!!")
+    print("Minesweeper game contain hidden mines and number of clues to avoid them, in order to win avoid mines.")
+    print("Top left corner is row: 0, col: 0")
+    print("-" * 35)
     # create the board and plant the bombs
     board = Board(dim_size, num_bombs)
     safe = True
