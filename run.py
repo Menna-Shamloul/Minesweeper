@@ -132,8 +132,7 @@ def play(dim_size=10, num_bombs=10):
         print(board)
         user_input = int(input("Where would you like to dig? Input as row,col: ")) 
         row, col = int(user_input[0]), int(user_input[-1])
-
-        if row < 0 or row >=board.dim_size or col < 0 or col >=board.dim_size:
+        if row < 0 or row >= board.dim_size or col < 0 or col >= board.dim_size:
             print("You provided wrong row or column. Try again.")
             continue
         safe = board.dig(row, col)
