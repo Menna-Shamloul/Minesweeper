@@ -130,8 +130,8 @@ def play(dim_size=10, num_bombs=10):
 
     while len(board.dug) < board.dim_size ** 2 - num_bombs:
         print(board)
-        user_row = re.split(',(\\s)*', int("Select row: "))
-        user_col = re.split(',(\\s)*', int("Select col: "))
+        user_row = int("Select row: ")
+        user_col = int("Select col: ")
         if row < 0 or row >=board.dim_size or col < 0 or col >=board.dim_size:
             print("You provided wrong row or column. Try again.")
             continue
