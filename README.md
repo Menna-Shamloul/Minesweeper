@@ -62,10 +62,14 @@ I used
 * Others:
     * Github
         - To store the repository for submission.
+    * Gitpod
+        - To create the project.
     * Heroku
         - To deploy a live version of the terminal.
     * Lucid
         - To make a flowchart for preparation the project
+    * Node.JS
+        - To get the game running as it is required for app to run.
 
 ## Bugs
 ### Fixed bugs
