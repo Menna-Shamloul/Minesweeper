@@ -43,4 +43,8 @@ As programmer of the game, I want the user to meet their goals(above). And i als
 ### Future Features
  * Add score to the game
  * Add limit time to game 
- a
+
+## Testing
+### Manual testing 
+I tested the code many times in the local terminal and in the mock terminal on the deployed site Heroku.
+I tried to put invalid input.
