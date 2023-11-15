@@ -114,8 +114,6 @@ class Board:
         string_rep = indices_row + '-'*str_len + '\n' + string_rep + '-'*str_len
 
         return string_rep
-    def
-
 
 
 # play the game
