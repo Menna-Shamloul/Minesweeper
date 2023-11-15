@@ -71,3 +71,20 @@ I used
 ### Fixed bugs
 * one error that i had when the user put wrong input the message of invalid input not apper
 ![Error image]() 
+
+## Deployment
+The game was deployed through Heroku. The steps are as following:
+
+1. Log into Github and locate[]().
+2. After creating Heroku account, Click "New" to create new app from the dashboard.
+3. Create a unique name for the game and select your region
+4. Go to setting and add the necessary config_vars and buildpacks are set to Python and NodeJS.
+5. Click Deploy.
+6. Scroll Down to Deployment Method and select GitHub.
+7. Select the name from Github to be deployed.
+8. Scroll down to the deploy options:
+Click Automatic deploys.This was chosen for this project.
+
+## Creadits
+
+* I used how to make user input validation 
