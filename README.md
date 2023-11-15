@@ -16,3 +16,24 @@ As a user I want :
 * Secondly, to learn to play and understand the game. (The user get's to understand the game when the user read the instructions.)
 * To play the game without any issues. (If an invalid input occurs the player get's to know what is wrong with an error message.)
 * To know if I won the game or lose. (The user get's feeadback message if the user won or the user lose when the game is over. )
+
+### Projects Goals
+As programmer of the game, I want the user to meet their goals(above). And i also want the game to run wihout bugs.
+
+## Flowchart
+
+## Features
+### Existing Features
+* Start of the game
+ * Welcomes to the player.
+ * Give the instructions of the game to user
+ * Show the game board .
+ * Ask the user where would you like to dig row,col.
+
+![Image of the start]()
+
+* The player wins/Loses
+ * The players get's asked if he want play again.
+ * If the user want to play again.
+ * If the user want to play again it takes them to the beginning of the game
+ * If the user dont want to play again 
