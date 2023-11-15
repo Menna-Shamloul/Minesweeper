@@ -92,3 +92,7 @@ Click Automatic deploys.This was chosen for this project.
 ## Creadits
 
 * I used how to make user input validation 
+
+### Acknowledgements
+Thanks to my mentor []() for advising me.
+Thanks to my family for trying out the game.
