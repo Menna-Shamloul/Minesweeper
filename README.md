@@ -37,3 +37,10 @@ As programmer of the game, I want the user to meet their goals(above). And i als
  * If the user want to play again.
  * If the user want to play again it takes them to the beginning of the game
  * If the user dont want to play again 
+
+![Image of winning]()
+
+### Future Features
+ * Add score to the game
+ * Add limit time to game 
+ a
