@@ -129,10 +129,14 @@ def play(dim_size=10, num_bombs=10):
 
     while len(board.dug) < board.dim_size ** 2 - num_bombs:
         print(board)
-        user_input = re.split(',(\\s)*', input("Where would you like to dig? Input as row,col: ")) 
+        user_input = input("Where would you like to dig? Input as row,col: ").split() 
+
+        if len(user_input) != 2:
+            print("Invalid input. Please enter both row and column values.")
+            continue
 
         try:
-            row, col = int(user_input[0]), int(user_input[-1])
+            row, col = map(int, user_input)
         except ValueError:
             print("Invalid input. Please enter valid integers for row and column.")
             continue
@@ -143,12 +147,12 @@ def play(dim_size=10, num_bombs=10):
         safe = board.dig(row, col)
         if not safe:
             break # game over
-    if safe:
-        print(" CONGRATULATIONS! You just beat Minesweeper")
-    else:
-        print("SORRY GAME OVER")
-        board.dug = [(r,c) for r in range(board.dim_size) for c in range(board.dim_size)]
-        print(board)
+        if safe:
+            print(" CONGRATULATIONS! You just beat Minesweeper")
+        else:
+            print("SORRY GAME OVER")
+            board.dug = [(r,c) for r in range(board.dim_size) for c in range(board.dim_size)]
+            print(board)
 
 if __name__ == '__main__': 
     while True:
