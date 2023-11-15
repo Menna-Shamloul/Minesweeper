@@ -48,3 +48,22 @@ As programmer of the game, I want the user to meet their goals(above). And i als
 ### Manual testing 
 I tested the code many times in the local terminal and in the mock terminal on the deployed site Heroku.
 I tried to put invalid input.
+
+### Automated testing
+I used 
+![ Image of validation]()
+
+## Technologies Used
+* languages :
+    * Python.
+* Libaraies:
+    * Random
+    * Re
+* Others:
+    * Github
+        - To store the repository for submission.
+    * Heroku
+        - To deploy a live version of the terminal.
+    * Lucid
+        - To make a flowchart for preparation the project
+     
