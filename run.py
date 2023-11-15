@@ -151,4 +151,9 @@ def play(dim_size=10, num_bombs=10):
         print(board)
 
 if __name__ == '__main__': 
-    play()
+    while True:
+        play()
+        play_again = input("Do you want to play again? (yes/no): ").lower()
+        if play_again != 'yes':
+            print("Goodbye!")
+            break
