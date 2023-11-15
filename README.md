@@ -4,4 +4,15 @@
 
 The objective of the game is to clear board containing hidden mines without dentonating any of them, with help from clues about the number of neighboring mines in each field.
 
-## User Experie
+## User Experience
+### Site purpose
+To provide a simple fun game for the people who want to challenge themself and like logic game.
+
+###
+
+### User Goals
+As a user I want :
+* First of all to have a simple fun game and be challenged. (The user get's challenged with different level of difficulty and in every dig the user must avoid the mines which are hidden and put randomly.)
+* Secondly, to learn to play and understand the game. (The user get's to understand the game when the user read the instructions.)
+* To play the game without any issues. (If an invalid input occurs the player get's to know what is wrong with an error message.)
+* To know if I won the game or lose. (The user get's feeadback message if the user won or the user lose when the game is over. )
