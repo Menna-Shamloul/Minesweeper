@@ -66,4 +66,8 @@ I used
         - To deploy a live version of the terminal.
     * Lucid
         - To make a flowchart for preparation the project
-     
+
+## Bugs
+### Fixed bugs
+* one error that i had when the user put wrong input the message of invalid input not apper
+![Error image]() 
