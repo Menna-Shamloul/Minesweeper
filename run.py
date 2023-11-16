@@ -1,5 +1,7 @@
 import random
 import re
+
+
 # create a board to represent the minesweeper game
 class Board:
     def __init__(self, dim_size, num_bombs):
@@ -10,9 +12,10 @@ class Board:
         self.board = self.make_new_board()
         # assign value to each cell class
         self.assign_values_to_board()
-        # initialize a set to track which locations uncovered and save (row,col) tuples into this set
+        # initialize a set to track which locations uncovered and save 
+        # (row,col) tuples into this set
         self.dug = set()
-    
+
     def make_new_board(self):
         # generate a new board
         board = [[None for _ in range(self.dim_size)] for _ in range(self.dim_size)]
