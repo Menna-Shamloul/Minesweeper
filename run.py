@@ -132,7 +132,7 @@ def play(dim_size=10, num_bombs=10):
 
     while len(board.dug) < board.dim_size ** 2 - num_bombs:
         print(board)
-        user_input = input("Where would you like to dig? Input as row,col: ").split() 
+        user_input = input("Where would you like to dig? Input as row col: ").split() 
 
         if len(user_input) != 2:
             print("Invalid input. Please enter both row and column values.")
