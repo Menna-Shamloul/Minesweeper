@@ -5,7 +5,7 @@
 The objective of the game is to clear board containing hidden mines without dentonating any of them, with help from clues about the number of neighboring mines in each field.
 Click here to play the game [Link to live site]()
 
-![Image of game]()
+![Image of game](images/start_image.png)
 
 ## User Experience
 ### Site purpose
@@ -25,7 +25,7 @@ As programmer of the game, I want the user to meet their goals(above). And i als
 
 ## Flowchart
 I used a Flowchart to plan out how the code should work
-![Design FlowChart]()
+![Design FlowChart](images/flowchart_image.jpg)
 
 ## Features
 ### Existing Features
@@ -35,7 +35,7 @@ I used a Flowchart to plan out how the code should work
  * Show the game board .
  * Ask the user where would you like to dig row,col.
 
-![Image of the start]()
+![Image of the start](images/start_image.png)
 
 * The player wins/Loses
  * The players get's asked if he want play again.
@@ -43,7 +43,7 @@ I used a Flowchart to plan out how the code should work
  * If the user want to play again it takes them to the beginning of the game
  * If the user dont want to play again 
 
-![Image of losing]()
+![Image of losing](images/lose_image.png)
 
 ### Future Features
  * Add score to the game
@@ -80,8 +80,8 @@ I used my school Code Institutes own validator to check the code automated.
 
 ## Bugs
 ### Fixed bugs
-* one error that i had when the user put wrong input the message of invalid input not apper
-![Error image]() 
+* one error that i had when the user put wrong input the message of invalid input not appear and i fixed this error as shown.
+![Error image](images/error_image.png) 
 
 ## Deployment
 The game was deployed through Heroku. The steps are as following:
@@ -97,14 +97,11 @@ The game was deployed through Heroku. The steps are as following:
 Click Automatic deploys.This was chosen for this project.
 
 ## Creadits
-
+### Code 
  - For general information [W3 Schools](https://www.w3schools.com/), [Open Source](https://opensource.com/), [GeeksforGeeks](https://www.geeksforgeeks.org/)
    and [Ioflood](https://ioflood.com/blog/python-2d-array/)
  - I used this vedio on YouTube as main guide and followed it step by step [YouTube](https://youtu.be/8ext9G7xspg?si=j8v5UO6GdQ8CFFkV)
  - I aslo use this GitHub project as main guide [Github Project](https://github.com/didzis1/Minesweeper_project/tree/main)
-
-
-* I used how to make user input validation 
 
 ### Acknowledgements
 Thanks to my mentor [Precious Ljege](https://github.com/precious-ijege) for advising me.
