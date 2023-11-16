@@ -47,10 +47,10 @@ As programmer of the game, I want the user to meet their goals(above). And i als
 ## Testing
 ### Manual testing 
 I tested the code many times in the local terminal and in the mock terminal on the deployed site Heroku.
-I tried to put invalid input.
+I tried to put invalid input and check that all error types are accounted for ( outside size of board, string are not excepted).
 
 ### Automated testing
-I used 
+I used my school Code Institutes own validator to check the code automated.
 ![ Image of validation]()
 
 ## Technologies Used
@@ -70,6 +70,8 @@ I used
         - To make a flowchart for preparation the project
     * Node.JS
         - To get the game running as it is required for app to run.
+    * pep8online
+        - To validate the python code to check for any error within my code.
 
 ## Bugs
 ### Fixed bugs
@@ -94,7 +96,7 @@ Click Automatic deploys.This was chosen for this project.
  - For general information [W3 Schools](), [Open Source](), [GeeksforGeeks]() and [Ioflood]()
  - I used this vedio on YouTube as main guide and followed it step by step [YouTube]()
  - I aslo use this GitHub project as main guide [Github Project]()
- 
+
 
 * I used how to make user input validation 
 
