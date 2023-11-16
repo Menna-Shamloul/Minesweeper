@@ -98,13 +98,14 @@ Click Automatic deploys.This was chosen for this project.
 
 ## Creadits
 
- - For general information [W3 Schools](), [Open Source](), [GeeksforGeeks]() and [Ioflood]()
- - I used this vedio on YouTube as main guide and followed it step by step [YouTube]()
- - I aslo use this GitHub project as main guide [Github Project]()
+ - For general information [W3 Schools](https://www.w3schools.com/), [Open Source](https://opensource.com/), [GeeksforGeeks](https://www.geeksforgeeks.org/)
+   and [Ioflood](https://ioflood.com/blog/python-2d-array/)
+ - I used this vedio on YouTube as main guide and followed it step by step [YouTube](https://youtu.be/8ext9G7xspg?si=j8v5UO6GdQ8CFFkV)
+ - I aslo use this GitHub project as main guide [Github Project](https://github.com/didzis1/Minesweeper_project/tree/main)
 
 
 * I used how to make user input validation 
 
 ### Acknowledgements
-Thanks to my mentor []() for advising me.
+Thanks to my mentor [Precious Ljege](https://github.com/precious-ijege) for advising me.
 Thanks to my family for trying out the game.
