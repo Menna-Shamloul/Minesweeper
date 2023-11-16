@@ -24,6 +24,8 @@ As a user I want :
 As programmer of the game, I want the user to meet their goals(above). And i also want the game to run wihout bugs.
 
 ## Flowchart
+I used a Flowchart to plan out how the code should work
+![Design FlowChart]()
 
 ## Features
 ### Existing Features
@@ -41,7 +43,7 @@ As programmer of the game, I want the user to meet their goals(above). And i als
  * If the user want to play again it takes them to the beginning of the game
  * If the user dont want to play again 
 
-![Image of winning]()
+![Image of losing]()
 
 ### Future Features
  * Add score to the game
