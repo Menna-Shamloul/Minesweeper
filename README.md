@@ -91,6 +91,11 @@ Click Automatic deploys.This was chosen for this project.
 
 ## Creadits
 
+ - For general information [W3 Schools](), [Open Source](), [GeeksforGeeks]() and [Ioflood]()
+ - I used this vedio on YouTube as main guide and followed it step by step [YouTube]()
+ - I aslo use this GitHub project as main guide [Github Project]()
+ 
+
 * I used how to make user input validation 
 
 ### Acknowledgements
