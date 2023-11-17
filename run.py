@@ -123,8 +123,8 @@ class Board:
 def play(dim_size=10, num_bombs=10):
     print("-" * 35)
     print("Welcome to MINESWEEPER GAME!!")
-    print("Minesweeper game contain hidden mines and number of clues to avoid them,")
-    print("in order to win avoid mines.")
+    print("Minesweeper game contain hidden mines and number of clues to avoid ")
+    print("them,in order to win avoid mines.")
     print("Top left corner is row: 0, col: 0")
     print("-" * 35)
     # create the board and plant the bombs
@@ -170,4 +170,5 @@ if __name__ == '__main__':
             print("Goodbye!")
             exit()
         elif play_again == 'yes':
-            main()
+            print("New game will start")
+            
