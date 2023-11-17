@@ -161,7 +161,7 @@ if __name__ == '__main__':
     while True:
         play()
         play_again = input("Do you want to play again? (yes/no): ").lower()
-        if play_again != 'no':
+        if play_again == 'no':
             print("Goodbye!")
             break
         elif play_again == 'yes':
