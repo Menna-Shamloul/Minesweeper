@@ -162,11 +162,12 @@ if __name__ == '__main__':
     while True:
         play()
         play_again = input("Do you want to play again? (yes/no): ").lower()
+        
+        while (play_again not in ('yes','no')):
+            print("Please enter a correct valve \n")
+            play_again = input("Do you want to play again? (yes/no): ").lower()
         if play_again == 'no':
             print("Goodbye!")
-            break
+            exit()
         elif play_again == 'yes':
-             play()
-        else:
-            print("Plz enter a correct value \n")
-            play_again = input("Do you want to play again? (yes/no): ").lower()
+            play()
