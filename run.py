@@ -170,4 +170,4 @@ if __name__ == '__main__':
             print("Goodbye!")
             exit()
         elif play_again == 'yes':
-            play()
+            main()
