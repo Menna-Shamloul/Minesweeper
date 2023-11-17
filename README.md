@@ -3,9 +3,9 @@
 ** Minesweeper Terminal Game written in Python.**
 
 The objective of the game is to clear board containing hidden mines without dentonating any of them, with help from clues about the number of neighboring mines in each field.
-Click here to play the game [Link to live site]()
+Click here to play the game [Link to live site](https://mine-sweeper1-d9da0b71fbea.herokuapp.com/)
 
-![Image of game](images/start_image.png)
+![Image of game](images/start1_image.png)
 
 ## User Experience
 ### Site purpose
