@@ -30,13 +30,13 @@ class Board:
             if board[row][col] == '*':
                 continue
 
-            board[row][col] = '*' # plant the bomb
+            board[row][col] = '*'   # plant the bomb
             bombs_planted += 1
-        
+
         return board
-    
+
     def assign_values_to_board(self):
-        # assign number for all empty spaces which represents how many neighboring bombs there are
+        # assign number for empty spaces which shows how many neighboring bombs 
         for r in range(self.dim_size):
             for c in range(self.dim_size):
                 if self.board[r][c] == '*':
@@ -48,21 +48,21 @@ class Board:
         for  r in range(max(0, row-1), min(self.dim_size-1, row+1)+1):
             for c in range(max(0, col-1), min(self.dim_size-1, col+1)+1):
                 if r == row and c == col:
-                    # if r and c are the same as location that we are checking continue
+                    # if r and c are same as checked location continue
                     continue
                 if self.board[r][c] == '*':
                     num_neighboring_bombs += 1
         return num_neighboring_bombs
-    
+
     def dig(self, row, col):
-        # dig at that location, return true if successful dig, false if bomb dug
-        self.dug.add((row, col)) # track that we dug here
+        # dig at that location,return true if successful dig,false if bomb dug
+        self.dug.add((row, col))   # track that we dug here
 
         if self.board[row][col] == '*':
             return False
         elif self.board[row][col] > 0:
             return True
-        
+
         # self.board[row][col]==0
         for r in range(max(0, row-1), min(self.dim_size-1, row+1)+1):
             for c in range(max(0, col-1), min(self.dim_size-1, col+1)+1):
@@ -92,7 +92,7 @@ class Board:
                     max(columns, key = len)
                 )
             )
-        
+
         # print the csv strings
         indices = [i for i in range(self.dim_size)]
         indices_row = '   '
@@ -102,7 +102,7 @@ class Board:
             cells.append(format % (col))
         indices_row += '  '.join(cells)
         indices_row += '  \n'
-        
+
         for i in range(len(visible_board)):
             row = visible_board[i]
             string_rep += f'{i} |'
@@ -123,7 +123,8 @@ class Board:
 def play(dim_size=10, num_bombs=10):
     print("-" * 35)
     print("Welcome to MINESWEEPER GAME!!")
-    print("Minesweeper game contain hidden mines and number of clues to avoid them, in order to win avoid mines.")
+    print("Minesweeper game contain hidden mines and number of clues to avoid them,")
+    print("in order to win avoid mines.")
     print("Top left corner is row: 0, col: 0")
     print("-" * 35)
     # create the board and plant the bombs
@@ -132,7 +133,7 @@ def play(dim_size=10, num_bombs=10):
 
     while len(board.dug) < board.dim_size ** 2 - num_bombs:
         print(board)
-        user_input = input("Where would you like to dig? Input as row col: ").split() 
+        user_input = input("Where to dig? Input as row col: ").split() 
 
         if len(user_input) != 2:
             print("Invalid input. Please enter both row and column values.")
@@ -141,7 +142,7 @@ def play(dim_size=10, num_bombs=10):
         try:
             row, col = map(int, user_input)
         except ValueError:
-            print("Invalid input. Please enter valid integers for row and column.")
+            print("Invalid input.Enter valid integers for row and column.")
             continue
 
         if row < 0 or row >= board.dim_size or col < 0 or col >= board.dim_size:
@@ -149,7 +150,7 @@ def play(dim_size=10, num_bombs=10):
             continue
         safe = board.dig(row, col)
         if not safe:
-            break # game over
+            break   # game over
     if safe:
         print(" CONGRATULATIONS! You just beat Minesweeper")
     else:
