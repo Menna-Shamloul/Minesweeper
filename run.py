@@ -18,7 +18,12 @@ class Board:
 
     def make_new_board(self):
         # generate a new board
-        board = [[None for _ in range(self.dim_size)] for _ in range(self.dim_size)]
+        board = [
+            [None for _ in
+             range(self.dim_size)]
+            for _ in
+            range(self.dim_size)
+        ]
 
         # plant the bombs
         bombs_planted = 0
@@ -73,7 +78,12 @@ class Board:
 
     def __str__(self):
         # self string displays the current minesweeper board situation
-        visible_board = [[None for _ in range(self.dim_size)] for _ in range(self.dim_size)]
+        visible_board = [
+            [None for _ in
+             range(self.dim_size)]
+            for _ in
+            range(self.dim_size)
+            ]
         # create a new array which the user will see
         for row in range(self.dim_size):
             for col in range(self.dim_size):
@@ -114,7 +124,11 @@ class Board:
             string_rep += ' |\n'
 
         str_len = int(len(string_rep) / self.dim_size)
-        string_rep = indices_row + '-'*str_len + '\n' + string_rep + '-'*str_len
+        string_rep = (
+            indices_row + '-'*str_len
+            + '\n' +
+            string_rep + '-'*str_len
+        )
 
         return string_rep
 
@@ -123,7 +137,7 @@ class Board:
 def play(dim_size=10, num_bombs=10):
     print("-" * 35)
     print("Welcome to MINESWEEPER GAME!!")
-    print("Minesweeper game contain hidden mines and number of clues to avoid ")
+    print("Minesweeper game contain hidden mines and number of clues to avoid")
     print("them,in order to win avoid mines.")
     print("Top left corner is row: 0, col: 0")
     print("-" * 35)
@@ -145,7 +159,12 @@ def play(dim_size=10, num_bombs=10):
             print("Invalid input.Enter valid integers for row and column.")
             continue
 
-        if row < 0 or row >= board.dim_size or col < 0 or col >= board.dim_size:
+        if (
+            row < 0 or row >=
+            board.dim_size or
+            col < 0 or col >=
+            board.dim_size
+        ):
             print("You provided wrong row or column. Try again.")
             continue
         safe = board.dig(row, col)
@@ -155,7 +174,12 @@ def play(dim_size=10, num_bombs=10):
         print(" CONGRATULATIONS! You just beat Minesweeper")
     else:
         print("SORRY GAME OVER")
-        board.dug = [(r, c) for r in range(board.dim_size) for c in range(board.dim_size)]
+        board.dug = [
+            (r, c) for r in
+            range(board.dim_size)
+            for c in
+            range(board.dim_size)
+        ]
         print(board)
 
 
@@ -163,7 +187,7 @@ if __name__ == '__main__':
     while True:
         play()
         play_again = input("Do you want to play again? (yes/no): ").lower()
-   
+
         while (play_again not in ('yes', 'no')):
             print("Please enter a correct valve \n")
             play_again = input("Do you want to play again? (yes/no): ").lower()
