@@ -12,7 +12,7 @@ class Board:
         self.board = self.make_new_board()
         # assign value to each cell class
         self.assign_values_to_board()
-        # initialize a set to track which locations uncovered and save 
+        # initialize a set to track which locations uncovered and save
         # (row,col) tuples into this set
         self.dug = set()
 
@@ -36,7 +36,7 @@ class Board:
         return board
 
     def assign_values_to_board(self):
-        # assign number for empty spaces which shows how many neighboring bombs 
+        # assign number for empty spaces which shows how many neighboring bombs
         for r in range(self.dim_size):
             for c in range(self.dim_size):
                 if self.board[r][c] == '*':
@@ -45,7 +45,7 @@ class Board:
 
     def get_num_neighboring_bombs(self, row, col):
         num_neighboring_bombs = 0
-        for  r in range(max(0, row-1), min(self.dim_size-1, row+1)+1):
+        for r in range(max(0, row-1), min(self.dim_size-1, row+1)+1):
             for c in range(max(0, col-1), min(self.dim_size-1, col+1)+1):
                 if r == row and c == col:
                     # if r and c are same as checked location continue
@@ -77,7 +77,7 @@ class Board:
         # create a new array which the user will see
         for row in range(self.dim_size):
             for col in range(self.dim_size):
-                if (row,col) in self.dug:
+                if (row, col) in self.dug:
                     visible_board[row][col] = str(self.board[row][col])
                 else:
                     visible_board[row][col] = ' '
@@ -89,7 +89,7 @@ class Board:
             columns = map(lambda x: x[idx], visible_board)
             widths.append(
                 len(
-                    max(columns, key = len)
+                    max(columns, key=len)
                 )
             )
 
@@ -133,7 +133,7 @@ def play(dim_size=10, num_bombs=10):
 
     while len(board.dug) < board.dim_size ** 2 - num_bombs:
         print(board)
-        user_input = input("Where to dig? Input as row col: ").split() 
+        user_input = input("Where to dig? Input as row col: ").split()
 
         if len(user_input) != 2:
             print("Invalid input. Please enter both row and column values.")
@@ -155,15 +155,16 @@ def play(dim_size=10, num_bombs=10):
         print(" CONGRATULATIONS! You just beat Minesweeper")
     else:
         print("SORRY GAME OVER")
-        board.dug = [(r,c) for r in range(board.dim_size) for c in range(board.dim_size)]
+        board.dug = [(r, c) for r in range(board.dim_size) for c in range(board.dim_size)]
         print(board)
 
-if __name__ == '__main__': 
+
+if __name__ == '__main__':
     while True:
         play()
         play_again = input("Do you want to play again? (yes/no): ").lower()
-        
-        while (play_again not in ('yes','no')):
+   
+        while (play_again not in ('yes', 'no')):
             print("Please enter a correct valve \n")
             play_again = input("Do you want to play again? (yes/no): ").lower()
         if play_again == 'no':
@@ -171,4 +172,4 @@ if __name__ == '__main__':
             exit()
         elif play_again == 'yes':
             print("New game will start")
-            
+
