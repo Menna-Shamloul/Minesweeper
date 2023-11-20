@@ -55,8 +55,8 @@ I tested the code many times in the local terminal and in the mock terminal on t
 I tried to put invalid input and check that all error types are accounted for ( outside size of board, string are not excepted).
 
 ### Automated testing
-I used my school Code Institutes own validator to check the code automated.No significant errors were found, most of the errors were fixed and the remaining were kept as per mentor's instruction.
-![ Image of validation](images/unfixed_image.png)
+I used my school Code Institutes own validator to check the code automated.No errors were found.
+![ Image of validation](images/fixed_image.png)
 
 ## Technologies Used
 * languages :
